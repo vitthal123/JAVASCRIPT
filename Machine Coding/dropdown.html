@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .container {
+          border: 1px solid black;
+          padding: 10px 1rem;
+          width: 300px;
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
+        
+        .country-container {
+          width: 300px;
+          border: 1px solid black;
+          height: 200px;
+          overflow-y: auto;
+        }
+        
+        .input {
+          width: 100%;
+          font-size: 1rem;
+          padding: 10px;
+        }
+        
+        .input:focus {
+          outline: none;
+        }
+        
+        .container:hover {
+          cursor: pointer;
+        }
+        
+        .name {
+          font-size: 1.5rem;
+        }
+        
+        .name:hover {
+          cursor: pointer;
+        }
+        
+        .hide {
+          display: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <h1>Drop Down</h1>
+        <div class="container">
+            <p id="asn">Select Country <span class="material-icons-outlined">
+                    arrow_downward
+                </span> </p>
+        </div>
+        <div class="country-container hide">
+            <div>
+                <input class="input" placeholder="Search a Country">
+            </div>
+            <div class="country-list"></div>
+        </div>
+    </main>
+    <script src="./dropdownScript.js"></script>
+</body>
+
+</html>

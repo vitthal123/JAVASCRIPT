@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX PAGE</title>
+</head>
+<body>
+    <h1 id="h1">Welcome to Page</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+    <script>
+        let start=document.querySelector('#start');
+        let stop=document.querySelector('#stop');
+        let h1=document.querySelector('#h1');
+        let intervalID;
+        function changetext(){
+            console.log('hello'+new Date());
+        }
+        start.addEventListener('click',()=>{
+            intervalID=setTimeout(changetext,2000);
+        })
+        
+        stop.addEventListener('click',()=>{
+            clearTimeout(intervalID);
+        });
+
+        </script>
+</html>

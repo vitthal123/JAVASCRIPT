@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Timer</title>
+    <style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .heading-1 {
+          font-size: 3rem;
+        }
+        
+        .para {
+          font-size: 3.5rem;
+        }
+        
+        .btn-container {
+          display: flex;
+          gap: 1rem;
+        }
+        
+        .button {
+          font-size: 2rem;
+        }
+        
+        .button:hover {
+          cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading-1">Stop Watch Timer</h1>
+        <p class="para">00 : 00 : 00</p>
+        <div class="btn-container">
+            <button class="button" name="start">Start</button>
+            <button class="button" name="stop">Stop</button>
+            <button class="button" name="reset">Reset</button>
+        </div>
+    </div>
+    <script src="./Watch.js"></script>
+</body>
+</html>
